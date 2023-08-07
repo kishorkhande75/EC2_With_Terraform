@@ -52,15 +52,15 @@ An existing SSH key pair in your AWS account. The key pair name should be provid
 6. <code>**terraform.tfvars**</code>: Contains the values for input variables, such as region, instance type, ports, AMI, and AWS credentials.
 
 ## Customization
-You can customize the Terraform configuration by modifying the <code>terraform.tfvars</code> file to set your desired values for region, instance type, ports, AMI, and AWS credentials. Additionally, you can modify the <code>script1.sh</code> file to include any custom commands you want to run on the EC2 instance during provisioning.
+You can customize the Terraform configuration by modifying the <code>**terraform.tfvars**</code> file to set your desired values for region, instance type, ports, AMI, and AWS credentials. Additionally, you can modify the <code>**script1.sh**</code> file to include any custom commands you want to run on the EC2 instance during provisioning.
 
 Remember to follow best security practices and keep sensitive information (e.g., AWS access keys) secure.
 
 ## Cleaning Up
 To remove the created resources and clean up, execute the following command:
 
-<code>terraform destroy</code>   # Destroy the deployed infrastructure
-Again, type <code>yes</code> to confirm the destruction of resources.
+<code>**terraform destroy**</code>   # Destroy the deployed infrastructure
+Again, type <code>**yes**</code> to confirm the destruction of resources.
 
 **Note**: Make sure to review and confirm the Terraform plan before applying any changes or destroying the infrastructure to prevent accidental data loss.
 
