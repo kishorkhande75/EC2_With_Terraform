@@ -38,18 +38,18 @@ An existing SSH key pair in your AWS account. The key pair name should be provid
 1. If you are satisfied with the changes, type yes to proceed with the deployment.
 
 ## Files Description
-1. <code>instance.tf</code>: Defines the AWS EC2 instance and associates it with the specified security group. It also attaches the user data script for configuration.
+1. <code>**instance.tf**</code>: Defines the AWS EC2 instance and associates it with the specified security group. It also attaches the user data script for configuration.
 
-2. <code>key.tf</code>: Creates an AWS key pair using the public key stored in the repository. This key pair will be used for SSH access to the EC2 instance.
+2. <code>**key.tf**</code>: Creates an AWS key pair using the public key stored in the repository. This key pair will be used for SSH access to the EC2 instance.
     provider: Configures the AWS provider with the desired region (us-east-1 in this case).
 
-3. <code>script1.sh</code>: A shell script that will be executed on the EC2 instance during provisioning.
+3. <code>**script1.sh**</code>: A shell script that will be executed on the EC2 instance during provisioning.
 
-4. <code>sg.tf</code>: Defines the AWS security group with customizable inbound ports.
+4. <code>**sg.tf**</code>: Defines the AWS security group with customizable inbound ports.
 
-5. <code>variables.tf</code>: Defines the input variables used in the Terraform configuration.
+5. <code>**variables.tf**</code>: Defines the input variables used in the Terraform configuration.
 
-6. <code>terraform.tfvars</code>: Contains the values for input variables, such as region, instance type, ports, AMI, and AWS credentials.
+6. <code>**terraform.tfvars**</code>: Contains the values for input variables, such as region, instance type, ports, AMI, and AWS credentials.
 
 ## Customization
 You can customize the Terraform configuration by modifying the <code>terraform.tfvars</code> file to set your desired values for region, instance type, ports, AMI, and AWS credentials. Additionally, you can modify the <code>script1.sh</code> file to include any custom commands you want to run on the EC2 instance during provisioning.
