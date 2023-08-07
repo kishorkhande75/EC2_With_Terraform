@@ -47,7 +47,7 @@ An existing SSH key pair in your AWS account. The key pair name should be provid
 
 4. <code>sg.tf</code>: Defines the AWS security group with customizable inbound ports.
 
-5. variables.tf: Defines the input variables used in the Terraform configuration.
+5. <code>variables.tf</code>: Defines the input variables used in the Terraform configuration.
 
 6. <code>terraform.tfvars</code>: Contains the values for input variables, such as region, instance type, ports, AMI, and AWS credentials.
 
