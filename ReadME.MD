@@ -9,6 +9,7 @@ Terraform installed on your local machine.
 An existing SSH key pair in your AWS account. The key pair name should be provided in the <code>terraform.tfvars</code> file.
 ## Usage
 1. **Clone this Git repository to your local machine.**
+
     <code>git clone https://github.com/kishorkhande75/EC2_With_Terraform.git</code>
 
     <code>cd <em>repository-directory</em> </code>
