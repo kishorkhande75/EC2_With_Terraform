@@ -16,17 +16,17 @@ An existing SSH key pair in your AWS account. The key pair name should be provid
 
 2. Make sure you have the necessary AWS credentials set up (either via environment variables or using AWS CLI configuration).
 3. Create a file named <code>terraform.tfvars</code> in the repository root with the required variables:
-region = "us-east-1"    # Replace with your desired AWS region
-instance_type = "t2.micro"
-ports = [22, 80, 443, 3306, 27017]   # Customize the list of inbound ports as needed
-ami = "ami-053b0d53c279acc90"   # Replace with your desired AMI ID
-access_key = "YOUR_ACCESS_KEY"   # Replace with your actual AWS access key
-secret_key = "YOUR_SECRET_KEY"   # Replace with your actual AWS secret key
+**region = "us-east-1"**    # Replace with your desired AWS region
+**instance_type = "t2.micro"**
+**ports = [22, 80, 443, 3306, 27017]**   # Customize the list of inbound ports as needed
+**ami = "ami-053b0d53c279acc90"**   # Replace with your desired AMI ID
+**access_key = "YOUR_ACCESS_KEY"**   # Replace with your actual AWS access key
+**secret_key = "YOUR_SECRET_KEY"**   # Replace with your actual AWS secret key
 
 1. In the repository root, execute the following commands:
 
-<code>terraform init</code>     # Initialize Terraform and download the AWS provider
-<code>terraform apply</code>     # Preview the changes and deploy the infrastructure
+<code>**terraform init**</code>     # Initialize Terraform and download the AWS provider
+<code>**terraform apply**</code>     # Preview the changes and deploy the infrastructure
 
 1. If you are satisfied with the changes, type yes to proceed with the deployment.
 
