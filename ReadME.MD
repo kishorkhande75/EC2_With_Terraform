@@ -30,8 +30,9 @@ An existing SSH key pair in your AWS account. The key pair name should be provid
     **secret_key = "YOUR_SECRET_KEY"**   # Replace with your actual AWS secret key
 
 4. Create public and private key using following Commands:
-    <code>**ssh-keygen**</code>    # To generate the public and private key pair and key pair to connect ssh connect to the EC2 instance
 
+    <code>**ssh-keygen**</code>    # To generate the public and private key pair and key pair to connect ssh connect to the EC2 instance
+    
     <code>**./id_rsa**</code>     # Enter this command for the file name and create a file in the same directory
 
 5. In the repository root, execute the following commands:
