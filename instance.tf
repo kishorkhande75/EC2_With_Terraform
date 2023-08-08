@@ -1,14 +1,14 @@
 
 # Define the instance details
 resource "aws_instance" "instance1" {
-  ami           = var.ami  # Change this to your desired AMI ID
+  ami           = var.ami # Change this to your desired AMI ID
   instance_type = "t2.micro"
-  user_data = base64encode(file("script1.sh"))
+  user_data     = base64encode(file("script1.sh"))
   # user_data     = file("script1.sh")  # Attach script1.sh to this instance
-  key_name      = "key_tf"  # Replace this with your actual SSH key pair name
+  key_name = "key_tf" # Replace this with your actual SSH key pair name
   # Attach the security group to the instance
   vpc_security_group_ids = [aws_security_group.instance_security_group.id]
- # Set the instance name tag
+  # Set the instance name tag
   tags = {
     Name = "Instance1"
   }
