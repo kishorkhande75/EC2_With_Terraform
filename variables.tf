@@ -6,7 +6,7 @@ variable "access_key" {
   type = string
 }
 
-variable "screat_key" {
+variable "secret_key" {
   type = string
 }
 
